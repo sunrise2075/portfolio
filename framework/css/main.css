@@ -1,0 +1,72 @@
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid {
+	margin : 0 auto;
+}
+
+@media only screen and (max-width:300px){
+	p {
+		background-color: blue;
+	}
+}
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 49.98%;
+}
+
+.col-7 {
+	width: 58.31%;
+}
+
+.col-8 {
+	width : 66.64%;
+}
+
+.col-9 {
+	width: 74.97%;
+}
+
+.col-10 {
+	width: 83.30%;
+}
+
+.col-11 {
+	width: 91.63%;
+}
+
+.col-12 {
+	width: 99.96%;
+}
+
+
