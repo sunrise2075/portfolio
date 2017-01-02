@@ -13,25 +13,25 @@ gulp.task('connect', function() {
 });
 	
 gulp.task('scripts',function(){
-	gulp.src('js/**/*.js')
+	gulp.src('src/js/**/*.js')
 		.pipe(gulpPlumber()) 
 		.pipe(uglify())
 		.pipe(rename('app.min.js'))
-		.pipe(gulp.dest('js/'))
+		.pipe(gulp.dest('build/js/'))
 		.pipe(connect.reload());
 });
 
 gulp.task('styles', function(){
-	gulp.src('css/*.css')
+	gulp.src('src/css/*.css')
 		.pipe(gulpPlumber()) 
 		.pipe(minifyCSS())
-		.pipe(gulp.dest('css/'))
+		.pipe(gulp.dest('build/css/'))
 		.pipe(connect.reload());
 });
 
 gulp.task('watch',function(){
-	gulp.watch('js/*.js',['scripts']);
-	gulp.watch('css/*.css',['styles']);
+	//gulp.watch('src/js/*.js',['scripts']);
+	gulp.watch('src/css/*.css',['styles']);
 });
 
 gulp.task('default', ['connect','watch']);
