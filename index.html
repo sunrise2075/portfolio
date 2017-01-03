@@ -6,59 +6,54 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>My Portfolio Home Page</title>
 
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
 
-<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
-<!--
-<link rel="stylesheet" type="text/css" href="./framework/css/main.css">
--->
-<link rel="stylesheet" type="text/css" href="./build/css/style.css">
-<!--
-<script type="text/javascript" src="./build/js/app.min.js"></script>
--->
-<script type="text/javascript" src="./src/js/jquery-3.1.1.js"></script>
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
-<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./build/css/style.css">
+
+<script src="./src/js/jquery-3.1.1.js"></script>
+
+<script src="./bootstrap/js/bootstrap.min.js"></script>
 
 
 </head>
 <body>
 
-<div class="container">
-
+<section class="container">
 	<!-- header row -->
-	<div class="row">
-		<div class="col-md-6">
+	<header class="row">
+		<section class="col-md-6">
 			<img class="header-logo img-responsive"  src="./src/images/Udacity_Logo.svg">
-		</div>
-		<div class="col-md-6">
+		</section>
+		<section class="col-md-6">
 				<h1 class="title-super text-right text-uppercase text-thin"> Tiger Cao </h1>
 				<h3 class="text-right text-uppercase"> Front End NINJA </h3>
-		</div>
-	</div>
+		</section>
+	</header>
 
-	<div class="row">
+	<section class="row">
 		<div class="col-md-12">
 		 <hr/>
 		</div>
-	</div>
+	</section>
 	
 	<!-- large image -->
-	<div class="row">
+	<section class="row">
 		<div class="col-md-12">
 		 <img class="img-responsive"  src="https://placebear.com/1140/350" alt="main bear image"/>
 		</div>
-	</div>
+	</section>
 	
-	<div class="row">
+	<section class="row">
 		<div class="col-md-12">
 			<h2 class="text-muted">Featured Work</h2>
 		</div>
-	</div>	
+	</section>	
 	
 	<!-- bottom list -->
 	<div class="row text-center">
-		<div class="col-md-12 bottom-list">
+		<div class="col-md-12">
 		<div class="col-md-4">
 			<img class="img-responsive" src="http://placekitten.com/g/555/300" data-toggle="modal" data-target="#project1" />
 			<h3>Appify</h3>
@@ -85,7 +80,6 @@
 		</div>
 
 	</div>
-</div>
 
 <!-- modal for project1 -->
 <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -139,7 +133,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 </body>
 </html>
