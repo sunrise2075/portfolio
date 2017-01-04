@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	minifyCSS = require('gulp-minify-css'),
 	gulpPlumber = require('gulp-plumber'),
-	connect = require('gulp-connect');;
+	connect = require('gulp-connect'),
+	csslint = require('gulp-csslint');;
 
 gulp.task('connect', function() {
   connect.server({
@@ -23,6 +24,7 @@ gulp.task('scripts',function(){
 
 gulp.task('styles', function(){
 	gulp.src('src/css/*.css')
+		.pipe(csslint())
 		.pipe(gulpPlumber()) 
 		.pipe(minifyCSS())
 		.pipe(gulp.dest('build/css/'))
